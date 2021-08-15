@@ -8,7 +8,7 @@ main:
   #  url: /tags/
 docs:
   - title: "Programming"
-    url: "/categories/programming"
+    url: "/categories/Programming"
   - title: "Python"
     url: "/categories/python"
   - title: "DeepLearning"
