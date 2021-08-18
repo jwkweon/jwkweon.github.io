@@ -32,22 +32,17 @@ sitemap :
 하지만 문제는 해결되지 않았고 여전히 웹 브라우저에서의 응답은 없었다.  
 다음으로 notebook 실행 명령어에서 port를 8888이 아닌 8022와 같은 다른 port로 변경해보았지만 여전히 동작하지 않았다. (`jupyter notebook --ip xxx.xxx.xxx.xxx --port=8022 --allow-root` 등 명령어 실행)  
 
-터미널에서 실행은 되지만 웹브라우저에서 거절이 되었기에 8888 port에 대한 접근이 허용되지 않은것 같다고 생각이 들었고 다음 명령어를 통해 port를 허용해 주었다.  
+터미널에서 실행은 되지만 웹브라우저에서 거절이 되었기에 8888 port에 대한 접근이 기본 ubuntu 방화벽에서 허용되지 않은것 같다고 생각이 들었고 다음 명령어를 통해 port를 허용해 주었다.  
 
+방화벽에서 port 허용  
 ```terminal
 $ sudo ufw allow 8888
 Rule added
 Rule added (v6)
-
+```  
+방화벽 reload  
+```terminal
 $ sudo ufw reload
 Firewall reloaded
 ```  
-
-```
-$ sudo ufw allow 8888
-Rule added
-Rule added (v6)
-
-$ sudo ufw reload
-Firewall reloaded
-```  
+이후 jupyter notebook은 웹 브라우저에서 잘 동작함을 확인하였다. 모종의 이유로 방화벽에서 몇개의 port들에 대한 접근이 막혔던 것 같다. 
