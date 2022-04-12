@@ -97,13 +97,13 @@ social:
 analytics:
   provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : "UA-153865346-1"
+    tracking_id          : "G-02MZ4YGBTG"
     anonymize_ip         : # true, false (default)
 
 
 # Site Author
 author:
-  name             : "Kwon juwon"
+  name             : "Kweon juwon"
   avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "공부한 내용을 정리하고 기록하는 블로그입니다^^"
   location         : "Seoul, Kwangwoon Univ."
