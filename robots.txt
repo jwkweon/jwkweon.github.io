@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://jwkweon.github.io/sitemap.xml
+Sitemap: https://jwkweon.github.io/sitemap.xml
